@@ -701,6 +701,30 @@
       .footer-grid { grid-template-columns: 1fr; gap: 32px; }
       .category-bar { top: 65px; }
     }
+
+    /* ===== Network Section ===== */
+    .network-section { padding: 72px 0; background: var(--off-white); }
+    .network-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; }
+    .network-card { background: var(--white); border-radius: 16px; padding: 32px 24px; text-align: center; transition: transform 0.3s, box-shadow 0.3s; text-decoration: none; color: inherit; display: block; }
+    .network-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(27,31,59,0.1); }
+    .network-card h3 { font-size: 1.1rem; font-weight: 800; margin-bottom: 6px; color: var(--navy); }
+    .network-card p { font-size: 0.82rem; color: var(--gray); margin-bottom: 10px; }
+    .network-card .network-link { color: var(--coral); font-weight: 700; font-size: 0.85rem; }
+
+    /* ===== Recommended for Founders (Affiliate) ===== */
+    .recommended-founders { background: var(--navy); border-radius: 24px; padding: 48px; margin: 0 0 60px; position: relative; overflow: hidden; }
+    .recommended-founders::before { content: ''; position: absolute; top: -40px; right: -40px; width: 180px; height: 180px; background: var(--coral); border-radius: 50%; opacity: 0.08; }
+    .recommended-founders h2 { color: var(--white); font-size: 1.75rem; font-weight: 900; margin-bottom: 12px; letter-spacing: -0.02em; position: relative; z-index: 1; }
+    .recommended-founders h2 span { color: var(--coral); }
+    .recommended-founders > p { color: rgba(255,255,255,0.7); font-size: 1rem; margin-bottom: 24px; max-width: 560px; position: relative; z-index: 1; }
+    .recommended-founders .aff-link { display: inline-block; background: var(--coral); color: var(--white); padding: 14px 32px; border-radius: 100px; font-weight: 700; font-size: 0.95rem; transition: background 0.2s, transform 0.1s; position: relative; z-index: 1; }
+    .recommended-founders .aff-link:hover { background: var(--coral-dark); transform: translateY(-2px); }
+    .recommended-founders .disclosure { font-size: 0.8rem; color: rgba(255,255,255,0.4); margin-top: 16px; position: relative; z-index: 1; }
+
+    /* ===== Network Footer ===== */
+    .network-footer { padding: 24px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); }
+    .network-footer p { font-size: 0.82rem; color: rgba(255,255,255,0.5); }
+    .network-footer a { color: var(--coral); font-weight: 600; }
   </style>
 </head>
 <body>
@@ -713,12 +737,12 @@
         <span class="logo-text">Girl<span>NextUp</span></span>
       </a>
       <nav class="main-nav">
-        <a href="#">Stories</a>
-        <a href="#">Careers</a>
-        <a href="#">Leadership</a>
-        <a href="#">Wellness</a>
-        <a href="#">Culture</a>
-        <a href="#" class="nav-cta">Subscribe</a>
+        <a href="articles/founder-500-to-millions.html">Stories</a>
+        <a href="articles/founder-500-to-millions.html">Careers</a>
+        <a href="articles/founder-500-to-millions.html">Leadership</a>
+        <a href="articles/founder-500-to-millions.html">Wellness</a>
+        <a href="articles/founder-500-to-millions.html">Culture</a>
+        <a href="#newsletter" class="nav-cta">Subscribe</a>
       </nav>
       <button class="menu-toggle" aria-label="Toggle menu">☰</button>
     </div>
@@ -731,7 +755,7 @@
         <a href="#" class="active">All Stories</a>
         <a href="#">Career &amp; Money</a>
         <a href="#">Leadership</a>
-        <a href="#">Entrepreneurship</a>
+        <a href="articles/founder-500-to-millions.html">Entrepreneurship</a>
         <a href="#">Wellness</a>
         <a href="#">Culture</a>
         <a href="#">Motherhood</a>
@@ -748,12 +772,12 @@
         <h1>The Girl Next Up is the <span>Woman Who Leads</span></h1>
         <p>Bold stories, real advice, and unfiltered conversations with women who are building the future — one bold move at a time.</p>
         <div class="hero-actions">
-          <a href="#" class="btn-primary">Read Latest Stories</a>
+          <a href="articles/founder-500-to-millions.html" class="btn-primary">Read Latest Stories</a>
           <a href="#newsletter" class="btn-secondary">Join the Community</a>
         </div>
       </div>
       <div class="hero-visual">
-        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80" alt="Confident businesswoman leading a meeting" loading="eager">
+        <img src="articles/headers/female-founder.png" alt="Confident businesswoman leading a meeting" loading="eager">
         <div class="hero-stat">
           <div class="hero-stat-item">
             <div class="hero-stat-num">500+</div>
@@ -777,11 +801,11 @@
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">Editor's <span>Pick</span></h2>
-        <a href="#" class="section-link">View All →</a>
+        <a href="articles/founder-500-to-millions.html" class="section-link">View All →</a>
       </div>
       <article class="feature-story">
         <div class="feature-story-img">
-          <img src="https://images.unsplash.com/photo-1580477667995-2b94f01c9516?w=800&q=80" alt="Female founder working at her desk" loading="lazy">
+          <img src="articles/headers/female-founder.png" alt="Female founder working at her desk" loading="lazy">
         </div>
         <div class="feature-story-body">
           <span class="story-category">Entrepreneurship</span>
@@ -791,7 +815,7 @@
             <div class="story-meta-avatar">MR</div>
             <span>By Maya Rodriguez · 8 min read</span>
           </div>
-          <a href="article.html" class="read-more" style="margin-top:20px;">Read the full story →</a>
+          <a href="articles/founder-500-to-millions.html" class="read-more" style="margin-top:20px;">Read the full story →</a>
         </div>
       </article>
     </div>
@@ -802,12 +826,12 @@
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">Latest <span>Stories</span></h2>
-        <a href="#" class="section-link">View All →</a>
+        <a href="articles/founder-500-to-millions.html" class="section-link">View All →</a>
       </div>
       <div class="stories-grid">
-        <article class="story-card">
+        <a href="articles/founder-500-to-millions.html" class="story-card" style="text-decoration:none;color:inherit;display:block;">
           <div class="story-card-img">
-            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80" alt="Women in business meeting" loading="lazy">
+            <img src="articles/headers/female-athlete.png" alt="Women in business meeting" loading="lazy">
           </div>
           <div class="story-card-body">
             <span class="story-category">Leadership</span>
@@ -818,11 +842,11 @@
               <span>By Jessica Lin · 6 min read</span>
             </div>
           </div>
-        </article>
+        </a>
 
-        <article class="story-card">
+        <a href="articles/founder-500-to-millions.html" class="story-card" style="text-decoration:none;color:inherit;display:block;">
           <div class="story-card-img">
-            <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=600&q=80" alt="Woman coding on laptop" loading="lazy">
+            <img src="articles/headers/woman-in-tech.png" alt="Woman coding on laptop" loading="lazy">
           </div>
           <div class="story-card-body">
             <span class="story-category">Tech &amp; Innovation</span>
@@ -833,11 +857,11 @@
               <span>By Aisha Khan · 9 min read</span>
             </div>
           </div>
-        </article>
+        </a>
 
-        <article class="story-card">
+        <a href="articles/founder-500-to-millions.html" class="story-card" style="text-decoration:none;color:inherit;display:block;">
           <div class="story-card-img">
-            <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=600&q=80" alt="Woman practicing yoga outdoors" loading="lazy">
+            <img src="articles/headers/female-athlete-training.png" alt="Woman practicing yoga outdoors" loading="lazy">
           </div>
           <div class="story-card-body">
             <span class="story-category">Wellness</span>
@@ -848,11 +872,11 @@
               <span>By Sarah Park · 5 min read</span>
             </div>
           </div>
-        </article>
+        </a>
 
-        <article class="story-card">
+        <a href="articles/founder-500-to-millions.html" class="story-card" style="text-decoration:none;color:inherit;display:block;">
           <div class="story-card-img">
-            <img src="https://images.unsplash.com/photo-1591129841117-3adfd314ac89?w=600&q=80" alt="Female scientist in laboratory" loading="lazy">
+            <img src="articles/headers/female-scientist.png" alt="Female scientist in laboratory" loading="lazy">
           </div>
           <div class="story-card-body">
             <span class="story-category">Career &amp; Money</span>
@@ -863,11 +887,11 @@
               <span>By Dana Thompson · 7 min read</span>
             </div>
           </div>
-        </article>
+        </a>
 
-        <article class="story-card">
+        <a href="articles/founder-500-to-millions.html" class="story-card" style="text-decoration:none;color:inherit;display:block;">
           <div class="story-card-img">
-            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80" alt="Diverse group of women collaborating" loading="lazy">
+            <img src="articles/headers/woman-in-tech-cto.png" alt="Diverse group of women collaborating" loading="lazy">
           </div>
           <div class="story-card-body">
             <span class="story-category">Culture</span>
@@ -878,11 +902,11 @@
               <span>By Nadia Velez · 8 min read</span>
             </div>
           </div>
-        </article>
+        </a>
 
-        <article class="story-card">
+        <a href="articles/founder-500-to-millions.html" class="story-card" style="text-decoration:none;color:inherit;display:block;">
           <div class="story-card-img">
-            <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=600&q=80" alt="Mother working from home with child" loading="lazy">
+            <img src="articles/headers/woman-scientist-cancer.png" alt="Mother working from home with child" loading="lazy"
           </div>
           <div class="story-card-body">
             <span class="story-category">Motherhood</span>
@@ -893,7 +917,56 @@
               <span>By Emma Chen · 10 min read</span>
             </div>
           </div>
-        </article>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== Recommended for Founders ===== -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="recommended-founders">
+        <h2>Recommended for <span>Founders</span></h2>
+        <p>Every founder needs the right playbook. "Profit First" by Mike Michalowicz is the one business book our featured founder Maya Rodriguez wishes she had read before her first sale — it reframes how you think about cash flow from day one.</p>
+        <a href="https://amzn.to/4g8edqN" class="aff-link" rel="sponsored nofollow" target="_blank">Get "Profit First" on Amazon →</a>
+        <p class="disclosure">Affiliate Disclosure: We may earn a commission from purchases made through this link at no extra cost to you. We only recommend products we genuinely believe in.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Cross-Network Ad Section ===== -->
+  <section class="network-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Explore the <span>Network</span></h2>
+      </div>
+      <div class="network-grid">
+        <a href="https://brushedpast.com" class="network-card" target="_blank" rel="noopener">
+          <h3>Brushed Past</h3>
+          <p>Art &amp; Creativity</p>
+          <span class="network-link">Visit →</span>
+        </a>
+        <a href="https://risentoday.com" class="network-card" target="_blank" rel="noopener">
+          <h3>Risen Today</h3>
+          <p>Spirituality &amp; Mindfulness</p>
+          <span class="network-link">Visit →</span>
+        </a>
+        <a href="https://spoofdaily.com" class="network-card" target="_blank" rel="noopener">
+          <h3>Spoof Daily</h3>
+          <p>Humor &amp; Satire</p>
+          <span class="network-link">Visit →</span>
+        </a>
+        <a href="https://openedterminal.com" class="network-card" target="_blank" rel="noopener">
+          <h3>Opened Terminal</h3>
+          <p>Tech &amp; AI</p>
+          <span class="network-link">Visit →</span>
+        </a>
+        <a href="https://josephcalitoy.com" class="network-card" target="_blank" rel="noopener">
+          <h3>Joseph Calitoy</h3>
+          <p>Founder &amp; Tech Advisor</p>
+          <span class="network-link">Visit →</span>
+        </a>
       </div>
     </div>
   </section>
@@ -905,7 +978,7 @@
         <div class="newsletter-content">
           <h2>Join the <span>Girl Next Up</span> Community</h2>
           <p>Get our best stories, career playbooks, and real talk delivered every Tuesday. No fluff, just fuel.</p>
-          <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='✓ You're In!';">
+          <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='✓ Subscribed!';">
             <input type="email" placeholder="your@email.com" required>
             <button type="submit">Subscribe Free</button>
           </form>
@@ -929,7 +1002,7 @@
         <div class="footer-col">
           <h4>Explore</h4>
           <ul>
-            <li><a href="#">All Stories</a></li>
+            <li><a href="articles/founder-500-to-millions.html">All Stories</a></li>
             <li><a href="#">Career &amp; Money</a></li>
             <li><a href="#">Leadership</a></li>
             <li><a href="#">Wellness</a></li>
@@ -955,6 +1028,9 @@
             <li><a href="#">Accessibility</a></li>
           </ul>
         </div>
+      </div>
+      <div class="network-footer">
+        <p>Part of the <strong>Calitoy Media Network</strong> — <a href="https://brushedpast.com">Brushed Past</a> · <a href="https://girlnextup.com">Girl Next Up</a> · <a href="https://risentoday.com">Risen Today</a> · <a href="https://spoofdaily.com">Spoof Daily</a> · <a href="https://openedterminal.com">Opened Terminal</a></p>
       </div>
       <div class="footer-bottom">
         <p>© 2026 Girl Next Up · An Incredible Humans Brand. All rights reserved.</p>

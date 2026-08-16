@@ -16,7 +16,7 @@
   <meta property="og:title" content="From Side Hustle to Seven Figures: How Maya Built a Brand Without Burning Out">
   <meta property="og:description" content="She started with $500 and a sewing machine. Three years later, her sustainable fashion line is in boutiques nationwide.">
   <meta property="og:url" content="https://girlnextup.com/article/from-side-hustle-to-seven-figures">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1580477667995-2b94f01c9516?w=1200&q=80">
+  <meta property="og:image" content="articles/headers/female-founder.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="article:published_time" content="2026-08-04T09:00:00Z">
@@ -33,7 +33,7 @@
   <meta name="twitter:creator" content="@mayarodriguez">
   <meta name="twitter:title" content="From Side Hustle to Seven Figures: How Maya Built a Brand Without Burning Out">
   <meta name="twitter:description" content="She started with $500 and a sewing machine. Three years later, her sustainable fashion line is in boutiques nationwide.">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1580477667995-2b94f01c9516?w=1200&q=80">
+  <meta name="twitter:image" content="articles/headers/female-founder.png">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,7 +49,7 @@
     "@context": "https://schema.org",
     "@type": "NewsArticle",
     "headline": "From Side Hustle to Seven Figures: How Maya Built a Brand Without Burning Out",
-    "image": ["https://images.unsplash.com/photo-1580477667995-2b94f01c9516?w=1200&q=80"],
+    "image": ["articles/headers/female-founder.png"],
     "datePublished": "2026-08-04T09:00:00Z",
     "dateModified": "2026-08-04T09:00:00Z",
     "author": {
@@ -388,6 +388,40 @@
     .footer-social a { width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; font-size: 0.9rem; font-weight: 700; transition: background 0.2s; }
     .footer-social a:hover { background: var(--coral); color: var(--white); }
 
+
+    /* ===== Network Ad ===== */
+    .network-ad { background: var(--coral-light); border-radius: 14px; padding: 24px 28px; margin: 36px 0; }
+    .network-ad .ad-label { display: block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--coral); margin-bottom: 8px; }
+    .network-ad p { font-size: 1rem; margin: 0; color: var(--navy); }
+    .network-ad a { color: var(--coral); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+
+    .network-callout { background: var(--coral-light); border-radius: 14px; padding: 24px 28px; margin: 36px 0; }
+    .network-callout p { font-size: 1rem; margin: 0; color: var(--navy); }
+    .network-callout a { color: var(--coral); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+
+    .network-promo { background: var(--off-white); border: 1px solid var(--gray-light); border-radius: 16px; padding: 36px; margin: 48px 0; }
+    .network-promo h4 { font-size: 1.2rem; font-weight: 800; margin-bottom: 20px; color: var(--navy); }
+    .network-promo ul { list-style: none; margin: 0; padding: 0; }
+    .network-promo li { margin-bottom: 12px; font-size: 0.95rem; }
+    .network-promo a { color: var(--coral); font-weight: 600; }
+
+    /* ===== Recommended for Founders ===== */
+    .recommended-founders { background: var(--navy); border-radius: 20px; padding: 40px; margin: 48px 0; position: relative; overflow: hidden; }
+    .recommended-founders::before { content: ''; position: absolute; top: -40px; right: -40px; width: 180px; height: 180px; background: var(--coral); border-radius: 50%; opacity: 0.08; }
+    .recommended-founders h3 { color: var(--white); font-size: 1.5rem; font-weight: 900; margin-bottom: 12px; position: relative; z-index: 1; }
+    .recommended-founders p { color: rgba(255,255,255,0.7); font-size: 1rem; margin-bottom: 24px; max-width: 560px; position: relative; z-index: 1; }
+    .recommended-founders .aff-link { display: inline-block; background: var(--coral); color: var(--white); padding: 14px 32px; border-radius: 100px; font-weight: 700; font-size: 0.95rem; transition: background 0.2s; position: relative; z-index: 1; }
+    .recommended-founders .aff-link:hover { background: var(--coral-dark); }
+    .recommended-founders .disclosure { font-size: 0.8rem; color: rgba(255,255,255,0.4); margin-top: 16px; position: relative; z-index: 1; }
+
+    /* Affiliate Disclosure */
+    .disclosure { background: var(--off-white); border: 1px solid var(--gray-light); border-radius: 12px; padding: 20px 24px; margin: 40px 0; font-size: 0.85rem; color: var(--gray); font-style: italic; line-height: 1.6; }
+
+    /* Network Footer */
+    .network-footer { padding: 24px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); }
+    .network-footer p { font-size: 0.82rem; color: rgba(255,255,255,0.5); }
+    .network-footer a { color: var(--coral); font-weight: 600; }
+
     /* ===== Responsive ===== */
     @media (max-width: 768px) {
       .container { padding: 0 16px; }
@@ -420,12 +454,12 @@
         <span class="logo-text">Girl<span>NextUp</span></span>
       </a>
       <nav class="main-nav">
-        <a href="index.html">Stories</a>
-        <a href="#">Careers</a>
-        <a href="#">Leadership</a>
-        <a href="#">Wellness</a>
-        <a href="#">Culture</a>
-        <a href="#" class="nav-cta">Subscribe</a>
+        <a href="articles/founder-500-to-millions.html">Stories</a>
+        <a href="articles/founder-500-to-millions.html">Careers</a>
+        <a href="articles/founder-500-to-millions.html">Leadership</a>
+        <a href="articles/founder-500-to-millions.html">Wellness</a>
+        <a href="articles/founder-500-to-millions.html">Culture</a>
+        <a href="#newsletter" class="nav-cta">Subscribe</a>
       </nav>
       <button class="menu-toggle" aria-label="Toggle menu">☰</button>
     </div>
@@ -439,7 +473,7 @@
         <nav class="breadcrumb">
           <a href="index.html">Home</a>
           <span>/</span>
-          <a href="#">Entrepreneurship</a>
+          <a href="articles/founder-500-to-millions.html">Entrepreneurship</a>
           <span>/</span>
           <span>Article</span>
         </nav>
@@ -461,7 +495,7 @@
     <!-- Hero Image -->
     <div class="container">
       <figure class="article-hero">
-        <img src="https://images.unsplash.com/photo-1580477667995-2b94f01c9516?w=1200&q=80" alt="Maya Rodriguez working at her sewing machine in her studio" loading="eager">
+        <img src="articles/headers/female-founder.png" alt="Maya Rodriguez working at her sewing machine in her studio" loading="eager">
         <figcaption class="article-hero-caption">Maya Rodriguez in her Brooklyn studio, where Verdant Threads began. Photo: Girl Next Up</figcaption>
       </figure>
     </div>
@@ -473,6 +507,13 @@
       <p>That was 2023. Today, Verdant Threads — Maya's sustainable fashion label — generates over $2.3 million in annual revenue, employs fourteen people, and is carried in forty-three boutiques across the country. She did it without venture funding, without a fashion degree, and without the burnout that nearly cost her everything in year two.</p>
 
       <p>Her story isn't a fairy tale. It's a case study in what happens when a woman trusts her instincts, ignores the "shoulds," and builds something on her own terms.</p>
+
+
+      <!-- Network Ad -->
+      <div class="network-ad">
+        <span class="ad-label">From our network</span>
+        <p>Building a brand? <a href="https://openedterminal.com">Opened Terminal</a> has the tech tools and AI resources every founder needs — from automation to analytics.</p>
+      </div>
 
       <h2>The $500 Start</h2>
 
@@ -499,6 +540,12 @@
       <div class="pull-quote">
         <p>"The moment I stopped pretending I had it all figured out was the moment people started buying. Vulnerability was my best marketing strategy."</p>
         <cite>— Maya Rodriguez</cite>
+      </div>
+
+
+      <!-- Network Callout -->
+      <div class="network-callout">
+        <p>💡 <strong>Brought to you by</strong> <a href="https://josephcalitoy.com">Joseph Calitoy</a> — fractional CTO and founder advisor helping entrepreneurs turn early traction into scalable, sustainable growth.</p>
       </div>
 
       <h2>Year Two: The Burnout Nobody Talks About</h2>
@@ -529,6 +576,15 @@
 
       <blockquote>"Burnout isn't a prerequisite for success. It's a signal that your systems haven't caught up with your growth. Listen to it."</blockquote>
 
+
+      <!-- Recommended for Founders -->
+      <div class="recommended-founders">
+        <h3>Recommended for Founders</h3>
+        <p>Every founder needs the right playbook. "Profit First" by Mike Michalowicz is the one business book Maya wishes she had read before her first sale — it reframes how you think about cash flow from day one.</p>
+        <a href="https://amzn.to/4g8edqN" class="aff-link" rel="sponsored nofollow" target="_blank">Get "Profit First" on Amazon →</a>
+        <p class="disclosure">Affiliate Disclosure: We may earn a commission from purchases made through this link at no extra cost to you. We only recommend products we genuinely believe in.</p>
+      </div>
+
       <h2>Year Three: Building the Machine</h2>
 
       <p>Maya's first hire was a part-time production assistant — a fashion student named Priya who she paid $22/hour. "It felt reckless. I was barely profitable. But within six weeks, I had reclaimed 20 hours a week and was using that time to land wholesale accounts."</p>
@@ -546,6 +602,22 @@
       <hr style="border: none; border-top: 1px solid var(--gray-light); margin: 40px 0;">
 
       <p><em>This article is part of our "Women Who Build" series, profiling female founders who are redefining what success looks like. Know someone we should feature? Email us at <a href="mailto:stories@girlnextup.com">stories@girlnextup.com</a>.</em></p>
+
+
+      <!-- Network Promo -->
+      <div class="network-promo">
+        <h4>Explore more from the Calitoy Media Network</h4>
+        <ul>
+          <li><a href="https://brushedpast.com">Brushed Past</a> — Art &amp; Creativity</li>
+          <li><a href="https://girlnextup.com">Girl Next Up</a> — Incredible Humans</li>
+          <li><a href="https://risentoday.com">Risen Today</a> — Spirituality &amp; Mindfulness</li>
+          <li><a href="https://spoofdaily.com">Spoof Daily</a> — Humor &amp; Satire</li>
+          <li><a href="https://openedterminal.com">Opened Terminal</a> — Tech &amp; AI</li>
+        </ul>
+      </div>
+
+      <!-- Affiliate Disclosure -->
+      <p class="disclosure"><strong>Affiliate Disclosure:</strong> This article contains affiliate links. If you purchase through these links, we may earn a commission at no extra cost to you. We only recommend products we genuinely believe in.</p>
 
       <!-- Share Bar -->
       <div class="share-bar">
@@ -572,7 +644,7 @@
         <div>
           <h4>Maya Rodriguez</h4>
           <p>Maya is a contributing writer at Girl Next Up and the founder of Verdant Threads, a sustainable fashion label based in Brooklyn. She writes about entrepreneurship, pricing strategy, and building a business without burning out. Her work has been featured in Vogue Business, Fast Company, and Inc.</p>
-          <a href="#">Read more from Maya →</a>
+          <a href="articles/founder-500-to-millions.html">Read more from Maya →</a>
         </div>
       </div>
     </div>
@@ -584,9 +656,9 @@
       <h3>More Stories You'll Love</h3>
       <div class="related-grid">
         <article class="related-card">
-          <a href="#">
+          <a href="articles/founder-500-to-millions.html">
             <div class="related-card-img">
-              <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80" alt="Women in business meeting" loading="lazy">
+              <img src="articles/headers/female-athlete.png" alt="Women in business meeting" loading="lazy">
             </div>
             <span class="story-category">Leadership</span>
             <h4>The Confidence Playbook: 7 Habits of Women Who Negotiate Without Apology</h4>
@@ -594,9 +666,9 @@
           </a>
         </article>
         <article class="related-card">
-          <a href="#">
+          <a href="https://brushedpast.com">
             <div class="related-card-img">
-              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80" alt="Women collaborating" loading="lazy">
+              <img src="articles/headers/woman-in-tech-cto.png" alt="Women collaborating" loading="lazy">
             </div>
             <span class="story-category">Culture</span>
             <h4>The Sisterhood Economy: Why Women Investing in Women Outperforms</h4>
@@ -604,9 +676,9 @@
           </a>
         </article>
         <article class="related-card">
-          <a href="#">
+          <a href="https://risentoday.com">
             <div class="related-card-img">
-              <img src="https://images.unsplash.com/photo-1591129841117-3adfd314ac89?w=600&q=80" alt="Female scientist" loading="lazy">
+              <img src="articles/headers/female-scientist.png" alt="Female scientist" loading="lazy">
             </div>
             <span class="story-category">Career &amp; Money</span>
             <h4>The Salary Transparency Movement: Why Sharing Your Pay Helps Everyone</h4>
@@ -623,7 +695,7 @@
       <div class="newsletter-content">
         <h2>Join the <span>Girl Next Up</span> Community</h2>
         <p>Get our best stories, career playbooks, and real talk delivered every Tuesday. No fluff, just fuel.</p>
-        <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='✓ You're In!';">
+        <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='✓ Subscribed!';">
           <input type="email" placeholder="your@email.com" required>
           <button type="submit">Subscribe Free</button>
         </form>
@@ -646,7 +718,7 @@
         <div class="footer-col">
           <h4>Explore</h4>
           <ul>
-            <li><a href="#">All Stories</a></li>
+            <li><a href="articles/founder-500-to-millions.html">All Stories</a></li>
             <li><a href="#">Career &amp; Money</a></li>
             <li><a href="#">Leadership</a></li>
             <li><a href="#">Wellness</a></li>
@@ -668,6 +740,9 @@
             <li><a href="#">Cookie Policy</a></li>
           </ul>
         </div>
+      </div>
+      <div class="network-footer">
+        <p>Part of the <strong>Calitoy Media Network</strong> — <a href="https://brushedpast.com">Brushed Past</a> · <a href="https://girlnextup.com">Girl Next Up</a> · <a href="https://risentoday.com">Risen Today</a> · <a href="https://spoofdaily.com">Spoof Daily</a> · <a href="https://openedterminal.com">Opened Terminal</a></p>
       </div>
       <div class="footer-bottom">
         <p>© 2026 Girl Next Up · An Incredible Humans Brand. All rights reserved.</p>

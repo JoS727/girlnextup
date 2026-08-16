@@ -277,6 +277,16 @@
     .network-footer p { font-size: 0.82rem; color: rgba(255,255,255,0.5); }
     .network-footer a { color: var(--coral); font-weight: 600; }
 
+
+    /* Recommended for Founders */
+    .recommended-founders { background: var(--navy); border-radius: 20px; padding: 40px; margin: 48px 0; position: relative; overflow: hidden; }
+    .recommended-founders::before { content: ''; position: absolute; top: -40px; right: -40px; width: 180px; height: 180px; background: var(--coral); border-radius: 50%; opacity: 0.08; }
+    .recommended-founders h4 { color: var(--white); font-size: 1.4rem; font-weight: 900; margin-bottom: 12px; position: relative; z-index: 1; }
+    .recommended-founders p { color: rgba(255,255,255,0.7); font-size: 1rem; margin-bottom: 24px; max-width: 560px; position: relative; z-index: 1; }
+    .recommended-founders .aff-link { display: inline-block; background: var(--coral); color: var(--white); padding: 14px 32px; border-radius: 100px; font-weight: 700; font-size: 0.95rem; transition: background 0.2s; position: relative; z-index: 1; }
+    .recommended-founders .aff-link:hover { background: var(--coral-dark); }
+    .recommended-founders .disclosure { font-size: 0.8rem; color: rgba(255,255,255,0.4); margin-top: 16px; position: relative; z-index: 1; font-style: italic; }
+
     /* Responsive */
     @media (max-width: 768px) {
       .container { padding: 0 16px; }
@@ -313,7 +323,7 @@
         <a href="#">Leadership</a>
         <a href="#">Wellness</a>
         <a href="#">Culture</a>
-        <a href="#" class="nav-cta">Subscribe</a>
+        <a href="#newsletter" class="nav-cta">Subscribe</a>
       </nav>
       <button class="menu-toggle" aria-label="Toggle menu">☰</button>
     </div>
@@ -326,7 +336,7 @@
         <nav class="breadcrumb">
           <a href="../index.html">Home</a>
           <span>/</span>
-          <a href="#">Entrepreneurship</a>
+          <a href="../index.html">Entrepreneurship</a>
           <span>/</span>
           <span>Article</span>
         </nav>
@@ -428,6 +438,15 @@
 
       <p class="disclosure"><strong>Affiliate Disclosure:</strong> This article contains affiliate links. If you purchase through these links, we may earn a commission at no extra cost to you. We only recommend products and courses we genuinely believe in.</p>
 
+
+      <!-- Recommended for Founders -->
+      <div class="recommended-founders">
+        <h4>Recommended for Founders</h4>
+        <p>Every founder needs the right playbook. "Profit First" by Mike Michalowicz is the one business book Maya wishes she had read before her first sale — it reframes how you think about cash flow from day one.</p>
+        <a href="https://amzn.to/4g8edqN" class="aff-link" rel="sponsored nofollow" target="_blank">Get "Profit First" on Amazon →</a>
+        <p class="disclosure">Affiliate Disclosure: We may earn a commission from purchases made through this link at no extra cost to you. We only recommend products we genuinely believe in.</p>
+      </div>
+
       <!-- AD SLOT 3 -->
       <div class="network-promo">
         <h4>Explore more from the Calitoy Media Network</h4>
@@ -467,7 +486,7 @@
       <h3>More Stories You'll Love</h3>
       <div class="related-grid">
         <article class="related-card">
-          <a href="#">
+          <a href="../index.html">
             <span class="story-category">Leadership</span>
             <h4>The Confidence Playbook: 7 Habits of Women Who Negotiate Without Apology</h4>
             <p>6 min read</p>
@@ -520,7 +539,7 @@
         <div class="footer-col">
           <h4>Explore</h4>
           <ul>
-            <li><a href="#">All Stories</a></li>
+            <li><a href="../index.html">All Stories</a></li>
             <li><a href="#">Career &amp; Money</a></li>
             <li><a href="#">Leadership</a></li>
             <li><a href="#">Wellness</a></li>
