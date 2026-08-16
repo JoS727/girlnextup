@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Girl Next Up — Empowering Stories of Incredible Women</title>
+  <meta name="description" content="Girl Next Up by Incredible Humans celebrates bold, modern women who are changing the game. Read inspiring stories, career advice, and real talk from women who lead.">
+  <meta name="keywords" content="women empowerment, female leaders, career advice for women, inspiring women, women in business, girl next up, incredible humans">
+  <meta name="author" content="Girl Next Up">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://girlnextup.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Girl Next Up">
+  <meta property="og:title" content="Girl Next Up — Empowering Stories of Incredible Women">
+  <meta property="og:description" content="Bold, modern stories of women who lead, build, and break barriers. Career advice, inspiration, and real talk.">
+  <meta property="og:url" content="https://girlnextup.com/">
+  <meta property="og:image" content="https://girlnextup.com/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@girlnextup">
+  <meta name="twitter:title" content="Girl Next Up — Empowering Stories of Incredible Women">
+  <meta name="twitter:description" content="Bold, modern stories of women who lead, build, and break barriers.">
+  <meta name="twitter:image" content="https://girlnextup.com/og-image.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23FF5A7A'/><text x='50' y='68' font-family='Arial' font-size='52' font-weight='bold' fill='white' text-anchor='middle'>G</text></svg>">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Girl Next Up",
+    "url": "https://girlnextup.com/",
+    "description": "Empowering stories of incredible women who lead, build, and break barriers.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Incredible Humans",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://girlnextup.com/logo.png"
+      }
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://girlnextup.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <style>
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --coral: #FF5A7A;
+      --coral-dark: #E0446A;
+      --coral-light: #FFE4E9;
+      --navy: #1B1F3B;
+      --navy-light: #2D3358;
+      --white: #FFFFFF;
+      --off-white: #FAFAFC;
+      --gray: #6B6B80;
+      --gray-light: #E8E8ED;
+      --max-width: 1200px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--navy);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ===== Header ===== */
+    .site-header {
+      background: var(--navy);
+      color: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.5rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+    }
+
+    .logo-mark {
+      background: var(--coral);
+      color: var(--white);
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      font-weight: 900;
+    }
+
+    .logo-text { color: var(--white); }
+    .logo-text span { color: var(--coral); }
+
+    .main-nav { display: flex; align-items: center; gap: 28px; }
+
+    .main-nav a {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.85);
+      transition: color 0.2s;
+    }
+
+    .main-nav a:hover { color: var(--coral); }
+
+    .nav-cta {
+      background: var(--coral);
+      color: var(--white) !important;
+      padding: 10px 22px;
+      border-radius: 100px;
+      font-weight: 700;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .nav-cta:hover {
+      background: var(--coral-dark);
+      transform: translateY(-1px);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* ===== Hero ===== */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+      color: var(--white);
+      padding: 80px 0 100px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 400px;
+      height: 400px;
+      background: var(--coral);
+      border-radius: 50%;
+      opacity: 0.08;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -150px;
+      left: -50px;
+      width: 300px;
+      height: 300px;
+      border: 3px solid var(--coral);
+      border-radius: 50%;
+      opacity: 0.1;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      background: rgba(255,90,122,0.15);
+      color: var(--coral);
+      padding: 6px 16px;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 span { color: var(--coral); }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 36px;
+      max-width: 480px;
+    }
+
+    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+
+    .btn-primary {
+      background: var(--coral);
+      color: var(--white);
+      padding: 14px 32px;
+      border-radius: 100px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      display: inline-block;
+      transition: background 0.2s, transform 0.1s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover { background: var(--coral-dark); transform: translateY(-2px); }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      padding: 14px 32px;
+      border-radius: 100px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      border: 2px solid rgba(255,255,255,0.3);
+      transition: border-color 0.2s, background 0.2s;
+      cursor: pointer;
+    }
+
+    .btn-secondary:hover { border-color: var(--coral); background: rgba(255,90,122,0.1); }
+
+    .hero-visual {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      aspect-ratio: 4/5;
+      background: var(--coral);
+    }
+
+    .hero-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-stat {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      right: 24px;
+      background: rgba(27,31,59,0.92);
+      backdrop-filter: blur(10px);
+      border-radius: 14px;
+      padding: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .hero-stat-item { text-align: center; }
+    .hero-stat-num { font-size: 1.75rem; font-weight: 900; color: var(--coral); }
+    .hero-stat-label { font-size: 0.75rem; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 0.05em; }
+
+    /* ===== Category Bar ===== */
+    .category-bar {
+      background: var(--white);
+      border-bottom: 1px solid var(--gray-light);
+      padding: 16px 0;
+      position: sticky;
+      top: 73px;
+      z-index: 90;
+    }
+
+    .category-nav {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .category-nav::-webkit-scrollbar { display: none; }
+
+    .category-nav a {
+      white-space: nowrap;
+      padding: 8px 18px;
+      border-radius: 100px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--navy);
+      background: var(--off-white);
+      transition: all 0.2s;
+    }
+
+    .category-nav a:hover, .category-nav a.active {
+      background: var(--coral);
+      color: var(--white);
+    }
+
+    /* ===== Section Headers ===== */
+    .section { padding: 72px 0; }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+    }
+
+    .section-title span { color: var(--coral); }
+
+    .section-link {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--coral);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .section-link:hover { gap: 10px; transition: gap 0.2s; }
+
+    /* ===== Featured Stories Grid ===== */
+    .stories-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    .story-card {
+      border-radius: 16px;
+      overflow: hidden;
+      background: var(--white);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .story-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(27,31,59,0.12);
+    }
+
+    .story-card-img {
+      width: 100%;
+      aspect-ratio: 16/10;
+      overflow: hidden;
+      background: var(--coral-light);
+    }
+
+    .story-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s;
+    }
+
+    .story-card:hover .story-card-img img { transform: scale(1.05); }
+
+    .story-card-body { padding: 24px; }
+
+    .story-category {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--coral);
+      margin-bottom: 12px;
+    }
+
+    .story-card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+
+    .story-card p {
+      font-size: 0.9rem;
+      color: var(--gray);
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+
+    .story-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.8rem;
+      color: var(--gray);
+    }
+
+    .story-meta-avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--coral-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--coral);
+      font-size: 0.8rem;
+    }
+
+    /* ===== Editor's Pick (Large Feature) ===== */
+    .feature-story {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+      background: var(--off-white);
+      border-radius: 24px;
+      overflow: hidden;
+      margin-bottom: 60px;
+    }
+
+    .feature-story-img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      overflow: hidden;
+    }
+
+    .feature-story-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .feature-story-body { padding: 48px 48px 48px 0; }
+
+    .feature-story .story-category { font-size: 0.85rem; }
+
+    .feature-story h2 {
+      font-size: 2.25rem;
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+
+    .feature-story p {
+      font-size: 1.05rem;
+      color: var(--gray);
+      margin-bottom: 24px;
+    }
+
+    .read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      color: var(--coral);
+    }
+
+    /* ===== Newsletter ===== */
+    .newsletter {
+      background: var(--navy);
+      border-radius: 24px;
+      padding: 64px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .newsletter::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 200px;
+      height: 200px;
+      background: var(--coral);
+      border-radius: 50%;
+      opacity: 0.1;
+    }
+
+    .newsletter::after {
+      content: '';
+      position: absolute;
+      bottom: -80px;
+      left: -30px;
+      width: 250px;
+      height: 250px;
+      border: 2px solid var(--coral);
+      border-radius: 50%;
+      opacity: 0.08;
+    }
+
+    .newsletter-content { position: relative; z-index: 1; max-width: 600px; margin: 0 auto; }
+
+    .newsletter h2 {
+      color: var(--white);
+      font-size: 2.5rem;
+      font-weight: 900;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+
+    .newsletter h2 span { color: var(--coral); }
+
+    .newsletter p {
+      color: rgba(255,255,255,0.7);
+      font-size: 1.1rem;
+      margin-bottom: 32px;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 12px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      padding: 16px 24px;
+      border: 2px solid rgba(255,255,255,0.15);
+      border-radius: 100px;
+      font-size: 1rem;
+      font-family: inherit;
+      background: rgba(255,255,255,0.05);
+      color: var(--white);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .newsletter-form input::placeholder { color: rgba(255,255,255,0.4); }
+    .newsletter-form input:focus { border-color: var(--coral); }
+
+    .newsletter-form button {
+      background: var(--coral);
+      color: var(--white);
+      border: none;
+      padding: 16px 32px;
+      border-radius: 100px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      font-family: inherit;
+      white-space: nowrap;
+    }
+
+    .newsletter-form button:hover { background: var(--coral-dark); transform: translateY(-1px); }
+
+    .newsletter-note {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.4);
+      margin-top: 16px;
+    }
+
+    /* ===== Footer ===== */
+    .site-footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.6);
+      padding: 64px 0 32px;
+      margin-top: 80px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+
+    .footer-brand .logo { margin-bottom: 16px; }
+
+    .footer-brand p {
+      font-size: 0.9rem;
+      line-height: 1.7;
+      max-width: 300px;
+    }
+
+    .footer-col h4 {
+      color: var(--white);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 20px;
+    }
+
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 12px; }
+
+    .footer-col a {
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover { color: var(--coral); }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-bottom p { font-size: 0.85rem; }
+
+    .footer-social { display: flex; gap: 16px; }
+
+    .footer-social a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      font-weight: 700;
+      transition: background 0.2s;
+    }
+
+    .footer-social a:hover { background: var(--coral); color: var(--white); }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 968px) {
+      .hero h1 { font-size: 2.5rem; }
+      .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      .hero-visual { max-width: 400px; }
+      .stories-grid { grid-template-columns: repeat(2, 1fr); }
+      .feature-story { grid-template-columns: 1fr; }
+      .feature-story-body { padding: 32px; }
+      .feature-story h2 { font-size: 1.75rem; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      .container { padding: 0 16px; }
+      .main-nav { display: none; }
+      .menu-toggle { display: block; }
+      .hero { padding: 48px 0 64px; }
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1.05rem; }
+      .stories-grid { grid-template-columns: 1fr; }
+      .section { padding: 48px 0; }
+      .section-title { font-size: 1.5rem; }
+      .newsletter { padding: 48px 24px; }
+      .newsletter h2 { font-size: 1.75rem; }
+      .newsletter-form { flex-direction: column; }
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .category-bar { top: 65px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <span class="logo-mark">G</span>
+        <span class="logo-text">Girl<span>NextUp</span></span>
+      </a>
+      <nav class="main-nav">
+        <a href="#">Stories</a>
+        <a href="#">Careers</a>
+        <a href="#">Leadership</a>
+        <a href="#">Wellness</a>
+        <a href="#">Culture</a>
+        <a href="#" class="nav-cta">Subscribe</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== Category Bar ===== -->
+  <div class="category-bar">
+    <div class="container">
+      <nav class="category-nav">
+        <a href="#" class="active">All Stories</a>
+        <a href="#">Career &amp; Money</a>
+        <a href="#">Leadership</a>
+        <a href="#">Entrepreneurship</a>
+        <a href="#">Wellness</a>
+        <a href="#">Culture</a>
+        <a href="#">Motherhood</a>
+        <a href="#">Tech &amp; Innovation</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-eyebrow">New Series · Women Who Build</span>
+        <h1>The Girl Next Up is the <span>Woman Who Leads</span></h1>
+        <p>Bold stories, real advice, and unfiltered conversations with women who are building the future — one bold move at a time.</p>
+        <div class="hero-actions">
+          <a href="#" class="btn-primary">Read Latest Stories</a>
+          <a href="#newsletter" class="btn-secondary">Join the Community</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80" alt="Confident businesswoman leading a meeting" loading="eager">
+        <div class="hero-stat">
+          <div class="hero-stat-item">
+            <div class="hero-stat-num">500+</div>
+            <div class="hero-stat-label">Stories</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hero-stat-num">120K</div>
+            <div class="hero-stat-label">Readers</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hero-stat-num">48</div>
+            <div class="hero-stat-label">Countries</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Editor's Pick ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Editor's <span>Pick</span></h2>
+        <a href="#" class="section-link">View All →</a>
+      </div>
+      <article class="feature-story">
+        <div class="feature-story-img">
+          <img src="https://images.unsplash.com/photo-1580477667995-2b94f01c9516?w=800&q=80" alt="Female founder working at her desk" loading="lazy">
+        </div>
+        <div class="feature-story-body">
+          <span class="story-category">Entrepreneurship</span>
+          <h2>From Side Hustle to Seven Figures: How Maya Built a Brand Without Burning Out</h2>
+          <p>She started with $500 and a sewing machine. Three years later, her sustainable fashion line is in boutiques nationwide. Here's the playbook she wishes she'd had from day one.</p>
+          <div class="story-meta">
+            <div class="story-meta-avatar">MR</div>
+            <span>By Maya Rodriguez · 8 min read</span>
+          </div>
+          <a href="article.html" class="read-more" style="margin-top:20px;">Read the full story →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Featured Stories Grid ===== -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Latest <span>Stories</span></h2>
+        <a href="#" class="section-link">View All →</a>
+      </div>
+      <div class="stories-grid">
+        <article class="story-card">
+          <div class="story-card-img">
+            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80" alt="Women in business meeting" loading="lazy">
+          </div>
+          <div class="story-card-body">
+            <span class="story-category">Leadership</span>
+            <h3>The Confidence Playbook: 7 Habits of Women Who Negotiate Without Apology</h3>
+            <p>Research shows women ask for raises 27% less often than men. These leaders are changing that — one conversation at a time.</p>
+            <div class="story-meta">
+              <div class="story-meta-avatar">JL</div>
+              <span>By Jessica Lin · 6 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="story-card">
+          <div class="story-card-img">
+            <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=600&q=80" alt="Woman coding on laptop" loading="lazy">
+          </div>
+          <div class="story-card-body">
+            <span class="story-category">Tech &amp; Innovation</span>
+            <h3>Breaking Into Tech at 35: A Career Switcher's Honest Roadmap</h3>
+            <p>No CS degree, no bootcamp brochure can prepare you for the real journey. Here's what actually worked.</p>
+            <div class="story-meta">
+              <div class="story-meta-avatar">AK</div>
+              <span>By Aisha Khan · 9 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="story-card">
+          <div class="story-card-img">
+            <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=600&q=80" alt="Woman practicing yoga outdoors" loading="lazy">
+          </div>
+          <div class="story-card-body">
+            <span class="story-category">Wellness</span>
+            <h3>Burnout Isn't a Badge of Honor: How to Rest Like You Mean It</h3>
+            <p>The toxic hustle culture told us exhaustion equals ambition. A therapist and a CEO explain why rest is a strategy.</p>
+            <div class="story-meta">
+              <div class="story-meta-avatar">SP</div>
+              <span>By Sarah Park · 5 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="story-card">
+          <div class="story-card-img">
+            <img src="https://images.unsplash.com/photo-1591129841117-3adfd314ac89?w=600&q=80" alt="Female scientist in laboratory" loading="lazy">
+          </div>
+          <div class="story-card-body">
+            <span class="story-category">Career &amp; Money</span>
+            <h3>The Salary Transparent Movement: Why Sharing Your Pay Helps Everyone</h3>
+            <p>One startup made every salary public. The results surprised even the skeptics.</p>
+            <div class="story-meta">
+              <div class="story-meta-avatar">DT</div>
+              <span>By Dana Thompson · 7 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="story-card">
+          <div class="story-card-img">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80" alt="Diverse group of women collaborating" loading="lazy">
+          </div>
+          <div class="story-card-body">
+            <span class="story-category">Culture</span>
+            <h3>The Sisterhood Economy: Why Women Investing in Women Outperforms</h3>
+            <p>Female-founded startups received just 2% of VC funding last year. A new wave of angel investors is flipping the script.</p>
+            <div class="story-meta">
+              <div class="story-meta-avatar">NV</div>
+              <span>By Nadia Velez · 8 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="story-card">
+          <div class="story-card-img">
+            <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=600&q=80" alt="Mother working from home with child" loading="lazy">
+          </div>
+          <div class="story-card-body">
+            <span class="story-category">Motherhood</span>
+            <h3>The Real Cost of Motherhood: One Mom's Transparent Budget Breakdown</h3>
+            <p>Childcare, career pauses, mental load — she tracked every cost for a year. The numbers tell a story every parent should read.</p>
+            <div class="story-meta">
+              <div class="story-meta-avatar">EC</div>
+              <span>By Emma Chen · 10 min read</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Newsletter ===== -->
+  <section class="section" id="newsletter" style="padding-top:0;">
+    <div class="container">
+      <div class="newsletter">
+        <div class="newsletter-content">
+          <h2>Join the <span>Girl Next Up</span> Community</h2>
+          <p>Get our best stories, career playbooks, and real talk delivered every Tuesday. No fluff, just fuel.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='✓ You're In!';">
+            <input type="email" placeholder="your@email.com" required>
+            <button type="submit">Subscribe Free</button>
+          </form>
+          <p class="newsletter-note">Join 120,000+ women who never miss a story. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-mark">G</span>
+            <span class="logo-text">Girl<span>NextUp</span></span>
+          </div>
+          <p>Girl Next Up by Incredible Humans. Empowering stories, career advice, and real conversations for women who lead.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#">All Stories</a></li>
+            <li><a href="#">Career &amp; Money</a></li>
+            <li><a href="#">Leadership</a></li>
+            <li><a href="#">Wellness</a></li>
+            <li><a href="#">Culture</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Write for Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Girl Next Up · An Incredible Humans Brand. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Twitter">X</a>
+          <a href="#" aria-label="LinkedIn">LI</a>
+          <a href="#" aria-label="TikTok">TT</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.querySelector('.menu-toggle')?.addEventListener('click', function() {
+      const nav = document.querySelector('.main-nav');
+      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+      nav.style.flexDirection = 'column';
+      nav.style.position = 'absolute';
+      nav.style.top = '100%';
+      nav.style.right = '0';
+      nav.style.background = 'var(--navy)';
+      nav.style.padding = '20px';
+      nav.style.borderRadius = '0 0 12px 12px';
+      nav.style.gap = '14px';
+    });
+  </script>
+</body>
+</html>
